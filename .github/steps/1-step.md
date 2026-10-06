@@ -67,6 +67,7 @@ Let's create a simple workflow that we can trigger manually from the GitHub UI.
            uses: actions/ai-inference@v2
            with:
              token: {% raw %}${{ secrets.GITHUB_TOKEN }}{% endraw %}
+             model: openai/gpt-4.1
              prompt: |
                Give me a programming joke.
 
